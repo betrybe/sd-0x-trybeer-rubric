@@ -1,0 +1,66 @@
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  margin: auto;
+  width: 70%;
+}
+
+.email-input {
+  border: solid 1px rgb(56, 56, 56);
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+}
+
+.password-input {
+  border: solid 1px rgb(56, 56, 56);
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+}
+
+.password-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin: auto;
+  width: 70%;
+}
+
+.signin-btn {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 70%;
+  border-radius: 14px 14px 0px 14px;
+  color: white;
+}
+
+.no-account-btn {
+  color: black;
+  font-size: 12px;
+  margin: auto;
+  padding: 5px 10px;
+  text-decoration: none;
+  width: fit-content;
+}

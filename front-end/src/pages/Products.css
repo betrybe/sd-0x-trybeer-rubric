@@ -1,0 +1,83 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 72px;
+  font-family: 'Open Sans', 'Courier New';
+}
+
+.card-content {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 5px 20px -16px;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  margin: 5px 0;
+  background-color: white;
+}
+
+.products-img {
+  max-height: 152px;
+}
+
+.cards-btn {
+  display: flex;
+  height: 20px;
+  align-items: center;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  margin: 0 15px 10px 15px;
+}
+
+h4 {
+  margin: 8px;
+  min-height: 42px;
+  font-weight: 500;
+}
+
+.price {
+  margin: 10px 0 0 0;
+  font-weight: 800;
+}
+
+.p-qty {
+  font-size: 20px;
+  margin: 0px 2px 12px 2px;
+}
+
+.checkout-prods-container {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.900);
+  padding: 18px 0;
+}
+
+.checkout-value {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.checkout-btn {
+  background-color: #000;
+  border: none;
+  border-radius: 14px 14px 0 14px;
+  box-shadow: 0px 5px 20px -16px;
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}

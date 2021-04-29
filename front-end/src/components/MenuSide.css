@@ -1,0 +1,16 @@
+.side-menu-container {
+  height: 36px;
+  background-color: black;
+  display: flex;
+  border-radius: 14px;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.side-btn {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: 800;
+}
