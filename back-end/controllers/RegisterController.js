@@ -13,9 +13,9 @@ const SECRET = 'senha';
 
 routerRegister.post('/', async (req, res, next) => {
   const { name, email, password, seller } = req.body.user;
-  const role = seller ? 'administrator' : 'client';  
-  
-    try {    
+  const role = seller ? 'administrator' : 'client';
+
+  try {
     await createOne(name, email, password, role);
     console.log('after');
     const payload = {

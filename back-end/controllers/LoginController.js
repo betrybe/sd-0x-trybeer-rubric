@@ -28,15 +28,15 @@ routerLogin.post('/', validateLogin, async (req, res, next) => {
   const token = jwt.sign(payload, SECRET, jwtConfig);
   const { name, email, role } = res.locals.user;
   res.status(201).json({
-    name, email, token, role,    
-    });
+    name, email, token, role,
+  });
 });
 
 routerLogin.get('/:id', async (req, res) => {
   const { id } = req.params;
-  
+
   const user = await getById(id);
   res.json(user);
-  });
+});
 
 module.exports = routerLogin;

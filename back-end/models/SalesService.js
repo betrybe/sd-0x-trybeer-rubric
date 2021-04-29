@@ -11,9 +11,9 @@ const insertSaleProductDetails = async (saleProductData, saleId) => {
 };
 
 const createOne = async (saleProductData, saleDetailsData) => {
-  const { userId, price, address, number, status } = saleDetailsData;  
+  const { userId, price, address, number, status } = saleDetailsData;
   const date = moment().format('YYYY-MM-DD HH:mm:ss');
-  const saleDetailsQuery = ('INSERT INTO sales' 
+  const saleDetailsQuery = ('INSERT INTO sales'
   + '(user_id, total_price, delivery_address, delivery_number, sale_date, status)'
   + 'VALUES(?, ?, ?, ?, ?, ?);');
   const [response] = await connection.query(saleDetailsQuery,
@@ -26,14 +26,14 @@ const createOne = async (saleProductData, saleDetailsData) => {
 const getAllByUserId = async (id) => {
   const sales = await connection.execute(
     'SELECT * FROM sales WHERE user_id = ?', [id],
-);
+  );
   return sales;
 };
 
 const getAllOrders = async () => {
   const sales = await connection.execute(
     'SELECT * FROM sales',
-);
+  );
   return sales;
 };
 
@@ -48,7 +48,7 @@ const updatedOne = async ({ id }) => {
 const getSaleById = async (id) => {
   const sales = await connection.execute(
     'SELECT * FROM sales WHERE id = ?', [id],
-);
+  );
   return sales;
 };
 

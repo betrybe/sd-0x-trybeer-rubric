@@ -8,8 +8,7 @@ const routerSalesAdm = Router();
 routerSalesAdm.get('/', validateToken, async (req, res) => {
   console.log('cheguei no get do backend');
   const { role } = res.locals;
-  if (role !== 'administrator') 
-    res.status(404).json({ message: 'something went wrong' });
+  if (role !== 'administrator') { res.status(404).json({ message: 'something went wrong' }); }
 
   const [orders] = await getAllOrders();
   return res.status(200).json({ orders });

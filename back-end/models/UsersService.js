@@ -1,10 +1,10 @@
 const connection = require('./connection');
 
 const getAll = async () => {
-const [user] = await connection.execute(
-'SELECT * FROM users;',
-);
-return user;
+  const [user] = await connection.execute(
+    'SELECT * FROM users;',
+  );
+  return user;
 };
 
 const getByEmail = async (email) => {
@@ -24,11 +24,11 @@ const getPassword = async (email) => {
 
 const getById = async (id) => {
   const [userId] = await connection.execute(
-  'SELECT name, email, role FROM users WHERE id = ?', [id],
-);
+    'SELECT name, email, role FROM users WHERE id = ?', [id],
+  );
   return userId;
-  };
-  
+};
+
 const createOne = async (name, email, password, role) => {
   await connection.execute(
     'INSERT INTO users (name, email, password, role) VALUES(?, ?, ?, ?)',

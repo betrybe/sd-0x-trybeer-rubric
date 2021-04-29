@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 // const images = require('../images.tar.gz');
 const { routerLogin,
-  routerRegister, routerProducts, routerProfile, routerSales, 
+  routerRegister, routerProducts, routerProfile, routerSales,
   routerSalesAdm } = require('./controllers');
 
 const app = express();
