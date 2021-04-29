@@ -28,7 +28,6 @@ function Checkout() {
   }, [reload]);
 
   if (isLogged()) return <Redirect to="/login" />;
-  
   return (
     <section className="checkout-container">
       <h1 data-testid="top-title">Finalizar pedido</h1>
