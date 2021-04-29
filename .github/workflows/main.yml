@@ -28,7 +28,7 @@ jobs:
         uses: betrybe/cypress-evaluator-action@v5
         with:
           repository-test-name: 'betrybe/sd-0x-trybeer-tests'
-          repository-test-branch: 'master'
+          repository-test-branch: 'ordenando-testes'
           npm-start: true
         env:
           MYSQL_USER: 'root'
